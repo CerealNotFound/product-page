@@ -6,6 +6,7 @@ import "../../styles/css/CartModal.css";
 const CartModal = () => {
 
     const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
+    console.log(ignored)
 
     return ReactDOM.createPortal(
                 <div id="cart-wrapper-modal">
