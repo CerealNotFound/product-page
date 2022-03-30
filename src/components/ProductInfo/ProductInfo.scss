@@ -1,0 +1,122 @@
+@import "../../styles/scss/mixins";
+
+#product-info-wrapper {
+    @include flex-center__vertically(space-evenly);
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+
+    @media screen and (max-width: 758px) {
+        & {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    #product-heading {
+        margin-top: 3rem;
+
+        h1 {
+            line-height: 4rem;
+        }
+
+        h5 {
+            color: #FE7D1F;
+        }
+    }
+
+    #product-info {
+        
+        margin: 1rem 0 0 0;
+
+        #info-paragraph {
+            color: #797A7E;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        #pricing {
+            @include flex-center__vertically(none);
+            margin-top: 1rem;
+
+            #discount {
+                margin-left: 1rem;
+                padding: 0.25rem 0.5rem;
+                background: #FFF1E6;
+                color: #FE7D1F;
+                border-radius: 15%/15%;
+            }
+        }
+
+        #price {
+            color: #797A7E;
+            text-decoration: line-through;
+            margin-top: 0.5rem;
+        }
+    }
+
+    #product-quantity-cart-wrapper {
+        @include flex-center__vertically(none);
+        width: 80%;
+        margin-top: 1.5rem;
+
+        @media screen and (max-width: 460px) {
+            & {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        #product-quantity {
+            @include flex-center__vertically(space-between);
+            background: #F7F8FD;
+            border-radius: 5%/15%;
+            padding: 1rem;
+            margin-right: 1rem;
+
+            @media screen and (max-width: 460px) {
+                
+                & {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    margin-right: 0;
+                    border-radius: 2%/14%;
+                }
+            }
+            
+            #plus {
+                width: 0.7rem;
+                height: 0.7rem;
+                margin: 0 0 0  1.5rem;
+            }
+
+            #minus {
+                @extend #plus;
+                margin: 0  1.5rem 0 0;
+            }
+        }
+
+        #cart-wrapper {
+            @include flex-center__vertically(center);
+            padding: 1rem 2rem 1rem 2rem;
+            border-radius: 5%/15%;
+            background: #FE7D1F;
+            min-width: max-content;
+            color: #fff;
+
+            @media screen and (max-width: 460px) {
+                
+                & {
+                    width: 100%;
+                    border-radius: 2%/14%;
+                }
+            }
+
+            #cart-icon {
+                width: 1rem;
+                height: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

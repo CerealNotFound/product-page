@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;CACd",
+    "sources": [
+        "../../Modals/EmptyCartModal/EmptyCartModal.scss"
+    ],
+    "names": [],
+    "file": "EmptyCartModal.css"
+}

@@ -1,0 +1,190 @@
+body {
+  overflow-x: hidden;
+}
+
+#none {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+#menu-background, #blackscreen {
+  position: fixed;
+  top: 0;
+  background: #00000090;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#blackscreen {
+  z-index: 10;
+  left: 0;
+}
+
+nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav #nav-main-wrapper {
+  width: 80%;
+  margin: 0;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  border-bottom: 2px solid #E8E7EC;
+}
+
+nav #nav-main-wrapper #logo {
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../../assets/logo.png") no-repeat top center/contain;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #cart-wrapper {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: 0;
+  right: 0;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper, nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper-hidden {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper #menu, nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper-hidden #menu {
+  list-style: none;
+  position: absolute;
+  color: #000;
+  top: 0;
+  height: 100vh;
+  width: 65%;
+  background-color: #fff;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper #menu div, nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper-hidden #menu div {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper #menu #cross, nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper-hidden #menu #cross {
+  margin: 1.5rem 0 0.5rem 0.5rem;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper #menu a, nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper-hidden #menu a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #menu-wrapper-hidden {
+  position: absolute;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #logo {
+  margin: 0;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  nav #nav-main-wrapper #logo-links__wrapper .nav__links {
+    display: none;
+  }
+  nav #nav-main-wrapper #logo-links__wrapper #hamburger {
+    display: block;
+    margin-right: 2rem;
+  }
+}
+
+nav #nav-main-wrapper #logo-links__wrapper .nav__links a {
+  padding-bottom: 1.25rem;
+  margin-left: 2rem;
+  color: #000;
+  text-decoration: none;
+}
+
+nav #nav-main-wrapper #logo-links__wrapper .nav__links a:hover {
+  border-bottom: 2px solid #FE7D1F;
+}
+
+@media screen and (max-width: 900px) {
+  nav #nav-main-wrapper {
+    width: 95%;
+    border-bottom: none;
+  }
+}
+
+nav #cart-avatar__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav #cart-avatar__wrapper li {
+  margin-left: 2rem;
+}
+
+nav #cart-avatar__wrapper #avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: url("../../assets/image-avatar.png") no-repeat center center/contain;
+}
+/*# sourceMappingURL=Navbar.css.map */

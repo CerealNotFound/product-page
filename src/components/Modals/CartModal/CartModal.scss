@@ -1,0 +1,89 @@
+@import "../../../styles/scss/mixins";
+
+#cart-wrapper-modal {
+    position: fixed;
+    z-index: 100;
+    top: 5rem;
+    right: 5%;
+    width: 30rem;
+    height: 40vh;
+    border-radius: 2%/4%;
+    background: #fff;
+    box-shadow: 1rem 1rem 1.5rem #00000090;
+
+    @media screen and (max-width: 550px) {
+        & {
+            left: 50%;
+            transform: translateX(-50%);
+            height: 15rem;
+            width: 90%;
+            border-radius: 3%/4%;
+            box-shadow: none;
+        }
+    }
+
+    #cart-heading {
+        line-height: 3.5rem;
+        padding: 0 1rem 0 1rem;
+        width: 100%;
+        border-bottom: 2px solid #E8E7EC;
+    }
+
+    #empty-cart-modal {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #797A7E;
+    }
+
+
+    #cart-modal-main-wrapper {
+        @include flex-center__vertically(space-between);
+        padding: 1.5rem;
+        color: #797A7E;
+        font-size: 1.05rem;
+
+        #cart-modal-thumbnail-main {
+            @include flex-center__vertically(none)
+        }
+
+        #delete-button {
+            width: 1.2rem;
+            height: 1.2rem;
+            // margin-left: 1.5rem;
+        }
+
+        #main-info {
+            margin-left: 1rem;
+
+            div {
+                line-height: 1.5rem;
+            }
+
+            #total-price {
+                color: #000;
+                margin-left: 0.5rem;
+                font-weight: bold;
+            }
+        }
+
+        #product-modal-thumbnail {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: url("../../../assets/image-product-1-thumbnail.jpg") no-repeat center center / contain;
+            border-radius: 10%/10%;
+        }
+
+    }
+    #checkout-button {
+        color: #fff;
+        border-radius: 2%/15%;
+        margin-left: 5%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        text-align: center;
+        width: 90%;
+        background-color: #FE7D1F;
+    }
+}
