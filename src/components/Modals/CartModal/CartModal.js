@@ -15,7 +15,7 @@ const CartModal = () => {
                         <div>
                         <div id={"cart-modal-main-wrapper"}> 
                             <div id={"cart-modal-thumbnail-main"}>
-                                <div id={"product-modal-thumbnail"}></div>
+                                <img id={"product-modal-thumbnail"} src={ItemsInCart.items[0].image} alt="this"/>
                                 <div id={"main-info"}>
                                         <div id="product-name">{ItemsInCart.items[0].name}</div>
                                         <div id="cart-price">${ItemsInCart.items[0].price} x {NumberOfItems.number}<span id="total-price">${ItemsInCart.items[0].price * NumberOfItems.number}</span></div>

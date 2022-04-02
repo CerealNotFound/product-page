@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "../../styles/css/ProductInfo.css";
 import { NumberOfItems, ItemsInCart } from '../Contexts';
 import CartModal from "../Modals/CartModal/CartModal";
+import productThumbnail from "../../assets/image-product-1-thumbnail.jpg";
 const ProductInfo = () => {
     
     const [numberOfProducts, setNumberOfProducts] = useState(1);
@@ -9,7 +10,8 @@ const ProductInfo = () => {
 
     const ProductInfo = [{
         name: "Fall Limited Edition Sneakers",
-        price: 125.00
+        price: 125.00,
+        image: productThumbnail
     }]
 
     return(
